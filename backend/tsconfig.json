@@ -1,17 +1,18 @@
 {
     "compilerOptions": {
-        "target": "ES6",
-        "strict": true,
-        "esModuleInterop": true,
-        "skipLibCheck": true,
-        "forceConsistentCasingInFileNames": true,
-        "outDir": "./dist",
-        "rootDir": "./src"
+        "target": "es6", // Compile code to ECMAScript 2015 (ES6)
+        "module": "commonjs", // Use CommonJS modules (adjust for other needs)
+        "outDir": "./dist", // Output compiled JavaScript files to the "dist" directory
+        "rootDir": "./src", // Look for TypeScript source files in the "src" directory
+        "allowJs": true, // Allow compilation of existing JavaScript files
+        "strict": true, // Enable strict type checking
+        "esModuleInterop": true // Allow smooth interoperability with ES modules
     },
     "include": [
-        "src"
+        "src/**/*.ts" // Include all TypeScript files within the "src" directory
     ],
     "exclude": [
-        "node_modules"
+        "node_modules", // Exclude the "node_modules" directory
+        "dist" // Exclude the "dist" directory (optional, since it's the output)
     ]
 }
